@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="SlimeRancher.SrDebug" Path="SlimeRancher/Plugins/SrDebug" Type="Library">
+    <References>
+        <!-- GAC Assemblies -->
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+
+        <!-- PluginManager + Game Assemblies -->
+        <Reference Include="SlimeRancher.Managed" />
+        <Reference Include="PluginManager" />
+    </References>
+
+    <!-- The framework version must be v3.5 or lower,
+         because that's the only one supported by all
+         versions of Unity. -->
+    <Properties>
+        <FrameworkVersions>
+            <Platform Name="Windows"><Version>v3.5</Version></Platform>
+            <Platform Name="Linux"><Version>v3.5</Version></Platform>
+            <Platform Name="MacOS"><Version>v3.5</Version></Platform>
+        </FrameworkVersions>
+    </Properties>
+
+    <Files>
+        <Compile Include="*.cs" />
+    </Files>
+</Project>
